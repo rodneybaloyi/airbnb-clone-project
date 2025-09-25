@@ -421,6 +421,46 @@ Reviews (Many) ←→ (1) Booking
 
 This database design ensures data integrity, supports efficient queries, and scales well as the application grows.
 
+## Feature Breakdown
+
+Our AirBnB Clone project encompasses a comprehensive set of features designed to replicate the core functionalities of the popular accommodation booking platform. Each feature plays a crucial role in delivering a seamless user experience for both guests and hosts.
+
+### 👤 User Management System
+The user management system handles all aspects of user accounts, including registration, authentication, and profile management. Users can create accounts as either guests or hosts, manage their personal information, upload profile pictures, and maintain their booking history. This feature ensures secure access control and personalized experiences across the platform.
+
+### 🏠 Property Management
+Property management allows hosts to create, edit, and manage their rental listings with comprehensive details and multiple images. Hosts can set pricing, availability calendars, house rules, and amenities to attract potential guests. This feature serves as the foundation of the platform, enabling property owners to showcase their accommodations effectively.
+
+### 🔍 Advanced Search and Filtering
+The search and filtering system enables guests to find properties based on location, dates, price range, amenities, and guest capacity. Users can apply multiple filters simultaneously and view results on both list and map interfaces. This feature is essential for helping guests discover properties that match their specific needs and preferences.
+
+### 📅 Booking System
+The booking system manages the entire reservation process from initial property selection to booking confirmation. It handles date availability checks, pricing calculations, special requests, and booking status updates. This core feature facilitates the transaction between guests and hosts while preventing double bookings and scheduling conflicts.
+
+### 💳 Payment Processing
+Secure payment processing handles all financial transactions including booking payments, security deposits, and refunds through Stripe integration. The system supports multiple payment methods and currencies while ensuring PCI compliance and fraud protection. This feature builds trust and enables seamless monetary transactions between users.
+
+### ⭐ Review and Rating System
+The review and rating system allows guests to leave feedback about their stay and rate different aspects of the property and host experience. Reviews help build trust within the community and provide valuable insights for future guests. This feature enhances transparency and helps maintain quality standards across all listings.
+
+### 📧 Communication System
+An integrated messaging system enables direct communication between guests and hosts for inquiries, booking discussions, and support during stays. The system includes notification features to keep users informed about booking updates and messages. This feature facilitates clear communication and helps resolve issues quickly.
+
+### 📊 Dashboard and Analytics
+Personalized dashboards provide users with comprehensive views of their activities - guests can track bookings and trip history while hosts can monitor property performance and earnings. Analytics help hosts optimize their listings and pricing strategies. This feature empowers users with insights to make informed decisions.
+
+### 🔐 Security and Trust Features
+Comprehensive security measures include identity verification, secure data encryption, fraud detection, and safety guidelines. The system implements multi-factor authentication and monitors suspicious activities to protect user accounts. These features ensure a safe and trustworthy environment for all platform users.
+
+### 📱 Responsive Design
+The platform features a fully responsive design that provides optimal user experience across desktop, tablet, and mobile devices. The interface adapts seamlessly to different screen sizes while maintaining functionality and visual appeal. This feature ensures accessibility and usability for users regardless of their preferred device.
+
+### 🌐 Multi-language and Currency Support
+International support includes multiple language options and currency conversions to accommodate global users. The system automatically detects user location and preferences to provide localized experiences. This feature expands the platform's reach and makes it accessible to a diverse, worldwide audience.
+
+### 🚨 Admin Panel and Moderation
+A comprehensive admin panel allows platform administrators to manage users, properties, bookings, and resolve disputes. The system includes moderation tools for content review, user verification, and policy enforcement. This feature ensures platform integrity and provides necessary oversight for smooth operations.
+
 ## 📁 Project Structure
 
 ```
