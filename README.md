@@ -126,6 +126,101 @@ This project is for educational purposes only.
 
 - RODNEY BALOYI -rodneybaloyi (https://github.com/rodneybaloyi)
 
----
+
+This project is currently in development. Check back for updates!
+
+👥 Team Roles and Responsibilities
+
+Understanding the different roles within our development team is crucial for project success. 
+Each role brings unique skills and perspectives to create a comprehensive AirBnB clone.
+
+🖥️ Frontend Developer
+Responsibilities:
+
+Develop user-facing features using React.js and TypeScript
+Implement responsive designs with Tailwind CSS
+Create reusable UI components and manage state
+Ensure cross-browser compatibility and optimal performance
+Collaborate with UI/UX designers to implement pixel-perfect designs
+Integrate frontend with backend APIs
+Implement client-side routing and navigation
+
+⚙️ Backend Developer
+Responsibilities:
+
+Design and develop server-side applications using Node.js and Express.js
+Create and maintain RESTful APIs
+Implement authentication and authorization systems
+Handle server-side business logic and data processing
+Integrate third-party services (payment gateways, email services)
+Ensure API security and performance optimization
+Write comprehensive API documentation
+
+🗄️ Database Administrator (DBA)
+Responsibilities:
+
+Design and optimize database schemas using PostgreSQL
+Manage database migrations and version control
+Implement data backup and recovery strategies
+Monitor database performance and optimize queries
+Ensure data security and implement access controls
+Design data relationships and maintain data integrity
+Handle database scaling and maintenance
+
+🎨 UI/UX Designer
+Responsibilities:
+
+Create wireframes, mockups, and prototypes
+Design intuitive user interfaces and user experiences
+Conduct user research and usability testing
+Develop design systems and style guides
+Ensure accessibility standards are met
+Create responsive designs for multiple devices
+Collaborate with developers to ensure design feasibility
+
+🔧 DevOps Engineer
+Responsibilities:
+
+Set up and maintain CI/CD pipelines
+Manage cloud infrastructure and deployment processes
+Implement monitoring and logging systems
+Ensure application scalability and reliability
+Manage containerization with Docker
+Handle environment configuration and secrets management
+Implement automated testing and deployment strategies
+
+🔍 Quality Assurance (QA) Tester
+Responsibilities:
+
+Develop and execute comprehensive test plans
+Perform manual and automated testing
+Identify, document, and track bugs and issues
+Ensure application meets functional requirements
+Conduct performance and security testing
+Verify cross-platform compatibility
+Collaborate with developers to resolve issues
+
+📊 Product Manager
+Responsibilities:
+
+Define project scope, goals, and deliverables
+Prioritize features and manage product roadmap
+Coordinate communication between team members
+Gather and analyze user requirements
+Make strategic decisions about product direction
+Ensure project stays on timeline and within budget
+Facilitate stakeholder communication
+
+🛡️ Security Specialist
+Responsibilities:
+
+Implement security best practices across the application
+Conduct security audits and vulnerability assessments
+Ensure data protection and privacy compliance
+Implement secure authentication and authorization
+Handle security incident response
+Stay updated with latest security threats and solutions
+Review code for security vulnerabilities
+
 
 This project is currently in development. Check back for updates!
