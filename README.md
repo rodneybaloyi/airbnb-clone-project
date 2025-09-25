@@ -461,6 +461,111 @@ International support includes multiple language options and currency conversion
 ### 🚨 Admin Panel and Moderation
 A comprehensive admin panel allows platform administrators to manage users, properties, bookings, and resolve disputes. The system includes moderation tools for content review, user verification, and policy enforcement. This feature ensures platform integrity and provides necessary oversight for smooth operations.
 
+## API Security
+
+API security is paramount in our AirBnB Clone project as it protects sensitive user data, financial transactions, and ensures platform integrity. Our comprehensive security strategy implements multiple layers of protection to safeguard against various threats and vulnerabilities.
+
+### 🔐 Authentication and Authorization
+
+#### JWT Token-Based Authentication
+We implement JSON Web Tokens (JWT) for secure user authentication across all API endpoints. JWTs provide a stateless authentication mechanism that scales efficiently and includes encrypted user information and permissions. This ensures that only verified users can access protected resources and prevents unauthorized account access.
+
+#### Role-Based Access Control (RBAC)
+Our authorization system implements role-based access control to ensure users can only perform actions appropriate to their role (guest, host, admin). This prevents privilege escalation attacks and ensures that sensitive operations like property management are restricted to authorized users only.
+
+#### OAuth Integration
+Third-party authentication through Google, Facebook, and Apple provides users with secure, convenient login options while reducing password-related vulnerabilities. OAuth integration enhances security by leveraging established identity providers' robust authentication systems.
+
+### 🛡️ Data Protection and Encryption
+
+#### HTTPS/TLS Encryption
+All API communications are encrypted using HTTPS with TLS 1.3 to protect data in transit. This prevents man-in-the-middle attacks and ensures that sensitive information like passwords, payment details, and personal data cannot be intercepted during transmission.
+
+#### Password Security
+User passwords are hashed using bcrypt with salt rounds to protect against rainbow table attacks and brute force attempts. We enforce strong password policies including minimum length, complexity requirements, and prevent common password usage.
+
+#### Sensitive Data Encryption
+Personal identifiable information (PII) and payment data are encrypted at rest using AES-256 encryption. Database-level encryption ensures that even if data is compromised, it remains unreadable without proper decryption keys.
+
+### 🚦 Rate Limiting and DDoS Protection
+
+#### API Rate Limiting
+We implement rate limiting to prevent abuse and ensure fair resource usage across all users. Different endpoints have customized rate limits based on their resource intensity and security sensitivity. This protects against brute force attacks and ensures platform stability during high traffic periods.
+
+#### IP-Based Throttling
+Suspicious IP addresses showing abnormal request patterns are automatically throttled or temporarily blocked. This helps prevent distributed denial-of-service (DDoS) attacks and protects the platform from malicious traffic.
+
+#### Request Size Limiting
+File upload and request payload size limits prevent resource exhaustion attacks and ensure optimal server performance. This is particularly important for property image uploads and prevents malicious users from overwhelming server storage.
+
+### 💳 Payment Security
+
+#### PCI DSS Compliance
+Our payment processing through Stripe ensures PCI DSS compliance, meaning sensitive card data is never stored on our servers. All payment information is tokenized and processed through Stripe's secure infrastructure, reducing our security liability and ensuring industry-standard protection.
+
+#### Transaction Verification
+Multi-step payment verification including card verification values (CVV) and address verification systems (AVS) help prevent fraudulent transactions. Real-time fraud detection algorithms monitor transaction patterns to identify and prevent suspicious payment activities.
+
+#### Secure Payment Webhooks
+Payment status updates from Stripe are verified using webhook signatures to ensure authenticity and prevent payment manipulation. This guarantees that booking confirmations and payment records accurately reflect actual transactions.
+
+### 🔍 Input Validation and Sanitization
+
+#### SQL Injection Prevention
+All database queries use parameterized statements and prepared queries through Prisma ORM to prevent SQL injection attacks. Input validation ensures that malicious SQL code cannot be executed against our database.
+
+#### XSS Protection
+User-generated content is sanitized to prevent cross-site scripting (XSS) attacks. HTML and JavaScript content is escaped or stripped from user inputs to prevent malicious code execution in other users' browsers.
+
+#### Data Validation
+Comprehensive input validation ensures that all API requests contain properly formatted data within expected parameters. This prevents data corruption and protects against injection attacks through invalid input manipulation.
+
+### 📊 Security Monitoring and Logging
+
+#### Audit Trails
+Comprehensive logging tracks all user actions, API requests, and system events for security analysis and compliance requirements. Audit trails help identify security breaches and provide forensic evidence for incident investigation.
+
+#### Real-Time Threat Detection
+Automated monitoring systems detect unusual patterns such as multiple failed login attempts, suspicious booking patterns, or abnormal API usage. These systems trigger alerts and can automatically implement protective measures.
+
+#### Security Incident Response
+Established protocols for security incident detection, containment, and response ensure rapid mitigation of security threats. This includes automated breach notifications and coordinated response procedures to minimize impact.
+
+### 🌐 API Endpoint Protection
+
+#### CORS Configuration
+Cross-Origin Resource Sharing (CORS) is properly configured to allow only trusted domains to access our APIs. This prevents unauthorized websites from making requests to our backend services on behalf of users.
+
+#### API Versioning Security
+Different API versions maintain consistent security standards while allowing for secure deprecation of older, potentially vulnerable endpoints. Version-specific security policies ensure that security improvements don't break existing integrations.
+
+#### Request Validation Middleware
+All API requests pass through validation middleware that verifies request structure, authentication tokens, and permission levels before reaching application logic. This creates a security barrier that protects against malformed or malicious requests.
+
+### 🔒 Session and Cookie Security
+
+#### Secure Session Management
+User sessions are managed with secure, httpOnly cookies that include proper expiration times and security flags. Session tokens are regularly rotated to minimize the impact of potential token compromise.
+
+#### CSRF Protection
+Cross-Site Request Forgery (CSRF) protection ensures that state-changing operations can only be initiated by legitimate user requests from our application. CSRF tokens are validated for all sensitive operations.
+
+### Why API Security is Crucial
+
+#### Protecting User Privacy
+With sensitive personal information including names, addresses, phone numbers, and travel patterns, robust security protects user privacy and maintains trust in the platform.
+
+#### Financial Security
+Payment processing and financial transactions require the highest security standards to prevent fraud, identity theft, and financial losses for both users and the platform.
+
+#### Business Continuity
+Security breaches can result in regulatory fines, legal liabilities, and loss of user trust that can severely impact business operations and reputation.
+
+#### Regulatory Compliance
+Compliance with regulations like GDPR, CCPA, and PCI DSS is mandatory and requires comprehensive security measures to avoid legal penalties and operational restrictions.
+
+Our multi-layered security approach ensures that the AirBnB Clone platform maintains the highest standards of protection while providing a seamless user experience.
+
 ## 📁 Project Structure
 
 ```
